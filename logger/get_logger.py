@@ -1,3 +1,14 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
+'''
+@Created Time:   2019-05-10
+@Author: Zhengyang Chen
+@Email: chenzhengyang117@gmail.com
+@Last Modified Time: 2019-05-10
+@Description: Functions to initialize the python logger.
+'''
+
 import logging
 
 # log to console or a file
