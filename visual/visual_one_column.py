@@ -3,11 +3,13 @@ import matplotlib.pyplot as plt
 import fire
 
 
-def main(log_path, save_path, data_loc=0, skip=1):
+def main(log_path, save_path, data_loc=0, skip=1, start_line=0):
 
     data = []
     with open(log_path, 'r') as f:
-        for line in f.readlines():
+        lines = f.readlines()
+        lines = lines[start_line:]
+        for line in lines:
             data.append(float(line.strip().split()[data_loc]))
 
     data_index = list(range(1, len(data) + 1))
